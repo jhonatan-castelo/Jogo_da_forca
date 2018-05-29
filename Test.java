@@ -1,4 +1,4 @@
-package asfd;
+package jogo_da_forca;
 
 import java.util.Scanner;
 import java.security.*;
@@ -6,7 +6,7 @@ import java.security.*;
 interface StringTest {
 	boolean test(String aStr, String bStr);
 }
-public class Test {
+public class Jogo {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
