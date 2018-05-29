@@ -11,7 +11,7 @@ public class Test {
 		
 		//System.out.println(palavras);
 		
-		StringTest isIn = (animais, palavras) -> animais.indexOf(palavras) != -1;
+		//StringTest isIn = (animais, palavras) -> animais.indexOf(palavras) != -1;
 		/*
 		String str = "This is a test";
 		
