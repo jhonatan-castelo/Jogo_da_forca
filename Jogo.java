@@ -1,4 +1,4 @@
-package jogo_da_forca;
+package forca;
 
 import java.util.Scanner;
 import java.security.*;
@@ -6,9 +6,10 @@ import java.security.*;
 interface StringTest {
 	boolean test(String aStr, String bStr);
 }
-public class Jogo {
-	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
+public class Jogo implements Resultados{
+		
+		Jogador user;
+		
 		
 		//System.out.println(palavras);
 		
@@ -28,6 +29,14 @@ public class Jogo {
 		else
 			System.out.println("'xyz' not found");
 		*/	
+		
+	
+
+	@Override
+	public void mostrarResultados() {
+		//Roleta r = new Roleta();
+		Scanner teclado = new Scanner(System.in);
+		// TODO Auto-generated method stub
 		String[] animais = {"girafa","cachorro","gato","pato","morcego","lobo"};
 		SecureRandom random = new SecureRandom();
 		
