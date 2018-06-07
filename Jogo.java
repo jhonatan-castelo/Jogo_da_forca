@@ -3,12 +3,18 @@ package forca;
 import java.util.Scanner;
 import java.security.*;
 
-interface StringTest {
+/*interface StringTest {
 	boolean test(String aStr, String bStr);
-}
+}*/
+
 public class Jogo implements Resultados{
 		
-		Jogador user;
+		Jogador[] player;
+		
+		public void jogo(Jogador player) {
+			this.player = new Jogador[2];
+		}
+		
 		
 		
 		//System.out.println(palavras);
@@ -75,5 +81,10 @@ public class Jogo implements Resultados{
 				
 			}
 	}
+	public void jogar(Jogador player) {
+		
+	}
+	
+	
 
 }
