@@ -6,10 +6,18 @@ import java.util.Random;
 public class Roleta extends Jogo implements Resultados{
 	private int tamanho;
 	private String[] animais;
-	public void rodarRoleta(){
+	private int animal_atual;
+	
+	public void Roleta() {
 		String[] animais = {"girafa","cachorro","gato","pato","morcego","lobo"};
-		SecureRandom random = new SecureRandom();
 		this.animais = animais;
+		
+	}
+	
+	public String rodarRoleta(){
+		SecureRandom random = new SecureRandom();
+		animal_atual = random.nextInt(this.animais.length);
+		return this.animais[animal_atual];
 	}
 	
 	public String[] getAnimais(){
