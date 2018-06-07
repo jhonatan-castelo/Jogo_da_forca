@@ -17,11 +17,11 @@ public class Jogador extends Cadastro{
 		return letra;
 	}
 	
+	public void Acertar() {
+		
+	}
 	
+	public void Errar() {
+		
+	}
 	
-	
-	
-}
-
-	
-}
