@@ -3,14 +3,14 @@ package forca;
 public class Jogador extends Cadastro{
 	private int vitorias, derrotas, pontos;
 	private String nome, letra;
-
+	private Roleta row;
 	public Jogador() {
 		super();
 	}
 
 	@Override
-	public void cadastroNome() {
-		this.nome = nome;	
+	public void cadastroNome(String nome) {
+		this.nome = nome;
 	}
 	
 	public String escolherLetra(String letra){
@@ -18,5 +18,10 @@ public class Jogador extends Cadastro{
 	}
 	
 	
+	
+	
+	
+}
+
 	
 }
