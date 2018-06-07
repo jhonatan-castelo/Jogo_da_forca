@@ -1,6 +1,8 @@
 package forca;
 
 public abstract class Cadastro {
-	
-	public abstract void cadastroNome();
+	private String nome;
+	public void cadastroNome(String nome) {
+		this.nome = nome;
+	}
 }
