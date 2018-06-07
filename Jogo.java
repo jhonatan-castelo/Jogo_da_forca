@@ -10,9 +10,14 @@ import java.security.*;
 public class Jogo implements Resultados{
 		
 		Jogador[] player;
+		Roleta row;
 		
-		public void jogo(Jogador player) {
+		public void iniciarJogo(Jogador player) {
 			this.player = new Jogador[2];
+		}
+		
+		public void terminarJogo(Jogador player) {
+			
 		}
 		
 		
