@@ -1,0 +1,16 @@
+package forca;
+
+import java.util.Arrays;
+
+public class Main {
+	public static void main(String[] args) {
+		Roleta roleta = new Roleta();
+		Jogo jogo = new Jogo();
+		
+		roleta.Roleta();
+		roleta.rodarRoleta();
+		//roleta.mostrarResultados();
+		jogo.Jogar(roleta.getAnimais());
+		//System.out.println(roleta.getAnimais());
+	}
+}
