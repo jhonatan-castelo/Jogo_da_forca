@@ -16,18 +16,20 @@ public class Roleta extends Jogo implements Resultados{
 	
 	public String rodarRoleta(){
 		SecureRandom random = new SecureRandom();
-		animal_atual = random.nextInt(this.animais.length);
-		return this.animais[animal_atual];
+		this.tamanho = random.nextInt(this.animais.length);
+		return this.animais[tamanho];
 	}
 	
-	public String[] getAnimais(){
-		return animais;
+	
+	
+	public String getAnimais(){
+		return this.animais[tamanho];
 	}
 	
 	@Override
 	public void mostrarResultados(){
-		SecureRandom random = new SecureRandom();
-		this.tamanho = random.nextInt(animais.length);
+		//SecureRandom random = new SecureRandom();
+		//this.tamanho = animais.length;
 		System.out.println(tamanho);
 	}
 	
