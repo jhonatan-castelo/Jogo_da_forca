@@ -26,9 +26,6 @@ public class Jogo implements Resultados{
 	public void mostrarResultados() {
 		
 	}
-	public void jogar(Jogador player) {
-		
-	}
 	
 	public void Jogar(String animais) {
 			Scanner teclado = new Scanner(System.in);
@@ -57,6 +54,9 @@ public class Jogo implements Resultados{
 							erro = false;
 							
 						}
+						
+						
+						
 						System.out.print(traco[i]+ " ");	
 					}
 					if (erro == true) {
