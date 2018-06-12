@@ -1,16 +1,27 @@
 package forca;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
+	
+	public static void main(String... args) {
 		Roleta roleta = new Roleta();
 		Jogo jogo = new Jogo();
+		Jogador pl = new Jogador();
+		
+		try {
+			pl.cadastroNome();
+		}catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+			main();
+		}
 		
 		roleta.Roleta();
 		roleta.rodarRoleta();
 		//roleta.mostrarResultados();
-		jogo.Jogar(roleta.getAnimais());
+		System.out.println("player 1 " + pl.getNome());
+		jogo.Jogar(roleta.getAnimal());
 		//System.out.println(roleta.getAnimais());
 	}
 }
