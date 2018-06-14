@@ -1,7 +1,5 @@
 package forca;
 
-package forca;
-
 import java.util.Scanner;
 
 //pq um jogador é um cadastro???
